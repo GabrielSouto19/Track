@@ -1,7 +1,12 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <!-- Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Teste Pixel Meta</title>
+
+     <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,17 +23,181 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1755103192326137&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {
+            if(f.fbq)return;
+            n=f.fbq=function(){
+                n.callMethod ?
+                n.callMethod.apply(n,arguments) :
+                n.queue.push(arguments)
+            };
+            if(!f._fbq)f._fbq=n;
+            n.push=n;
+            n.loaded=!0;
+            n.version='2.0';
+            n.queue=[];
+
+            t=b.createElement(e);
+            t.async=!0;
+            t.src=v;
+
+            s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s);
+
+        }(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', 'SEU_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button{
+            display:block;
+            width:100%;
+            margin:15px 0;
+            padding:15px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        form{
+            margin-top:30px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Trackenado a página</h1>
 
-    <a href="https://wa.me/559999999999"
-   onclick="fbq('track', 'Contact');">
-    Falar no WhatsApp
-</a>
-    
+    <h1>Teste de Eventos Meta Pixel</h1>
+
+    <!-- VIEW CONTENT -->
+    <button onclick="trackViewContent()">
+        Ver Produto
+    </button>
+
+    <!-- WHATSAPP -->
+    <button onclick="trackWhatsapp()">
+        Falar no WhatsApp
+    </button>
+
+    <!-- CHECKOUT -->
+    <button onclick="trackCheckout()">
+        Solicitar Orçamento
+    </button>
+
+    <!-- PURCHASE -->
+    <button onclick="trackPurchase()">
+        Simular Compra
+    </button>
+
+    <!-- COMPLETE REGISTRATION -->
+    <button onclick="trackRegistration()">
+        Cadastro Completo
+    </button>
+
+    <!-- FORMULÁRIO -->
+    <form id="leadForm">
+        <h2>Formulário de Lead</h2>
+
+        <input
+            type="text"
+            placeholder="Seu Nome"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Seu E-mail"
+            required
+        >
+
+        <button type="submit">
+            Enviar Formulário
+        </button>
+    </form>
+
+    <script>
+
+        function trackViewContent() {
+
+            fbq('track', 'ViewContent');
+
+            alert('Evento ViewContent enviado');
+
+        }
+
+        function trackWhatsapp() {
+
+            fbq('track', 'Contact');
+
+            window.open(
+                'https://wa.me/5531999999999',
+                '_blank'
+            );
+
+        }
+
+        function trackCheckout() {
+
+            fbq('track', 'InitiateCheckout');
+
+            alert('Evento InitiateCheckout enviado');
+
+        }
+
+        function trackPurchase() {
+
+            fbq('track', 'Purchase', {
+                value: 1500,
+                currency: 'BRL'
+            });
+
+            alert('Evento Purchase enviado');
+
+        }
+
+        function trackRegistration() {
+
+            fbq('track', 'CompleteRegistration');
+
+            alert('Evento CompleteRegistration enviado');
+
+        }
+
+        document
+            .getElementById('leadForm')
+            .addEventListener('submit', function(e){
+
+                e.preventDefault();
+
+                fbq('track', 'Lead');
+
+                alert('Evento Lead enviado');
+
+            });
+
+    </script>
+
 </body>
 </html>
