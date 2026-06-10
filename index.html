@@ -1,203 +1,241 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Teste Pixel Meta</title>
-
-     <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1755103192326137');
-fbq('track', 'PageView');
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js",
+  );
+
+  fbq("init", "SEU_PIXEL_ID");
+  fbq("track", "PageView");
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1755103192326137&ev=PageView&noscript=1"
+
+<noscript>
+  <img
+    height="1"
+    width="1"
+    style="display: none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"
+  />
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta Pixel + CAPI</title>
+    <script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js",
+  );
+  fbq("init", "1755103192326137");
+  fbq("track", "PageView");
+</script>
+<noscript
+  ><img
+    height="1"
+    width="1"
+    style="display: none"
+    src="https://www.facebook.com/tr?id=1755103192326137&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {
-            if(f.fbq)return;
-            n=f.fbq=function(){
-                n.callMethod ?
-                n.callMethod.apply(n,arguments) :
-                n.queue.push(arguments)
-            };
-            if(!f._fbq)f._fbq=n;
-            n.push=n;
-            n.loaded=!0;
-            n.version='2.0';
-            n.queue=[];
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
 
-            t=b.createElement(e);
-            t.async=!0;
-            t.src=v;
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
 
-            s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s);
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
 
-        }(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
 
-        fbq('init', 'SEU_PIXEL_ID');
-        fbq('track', 'PageView');
+      fbq("init", "1755103192326137");
+      fbq("track", "PageView");
     </script>
 
     <noscript>
-        <img height="1" width="1" style="display:none"
-             src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1755103192326137&ev=PageView&noscript=1"
+      />
     </noscript>
     <!-- End Meta Pixel Code -->
 
     <style>
-        body{
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+      }
 
-        button{
-            display:block;
-            width:100%;
-            margin:15px 0;
-            padding:15px;
-            font-size:18px;
-            cursor:pointer;
-        }
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+      }
 
-        form{
-            margin-top:30px;
-        }
+      button {
+        padding: 12px 20px;
+        cursor: pointer;
+      }
 
-        input{
-            width:100%;
-            padding:10px;
-            margin:10px 0;
-        }
+      .whatsapp {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #25d366;
+        color: white;
+        text-decoration: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Teste Meta Pixel + API de Conversões</h1>
 
-    <h1>Teste de Eventos Meta Pixel</h1>
-
-    <!-- VIEW CONTENT -->
-    <button onclick="trackViewContent()">
-        Ver Produto
-    </button>
-
-    <!-- WHATSAPP -->
-    <button onclick="trackWhatsapp()">
-        Falar no WhatsApp
-    </button>
-
-    <!-- CHECKOUT -->
-    <button onclick="trackCheckout()">
-        Solicitar Orçamento
-    </button>
-
-    <!-- PURCHASE -->
-    <button onclick="trackPurchase()">
-        Simular Compra
-    </button>
-
-    <!-- COMPLETE REGISTRATION -->
-    <button onclick="trackRegistration()">
-        Cadastro Completo
-    </button>
-
-    <!-- FORMULÁRIO -->
     <form id="leadForm">
-        <h2>Formulário de Lead</h2>
+      <input type="text" id="name" placeholder="Nome" required />
 
-        <input
-            type="text"
-            placeholder="Seu Nome"
-            required
-        >
+      <input type="email" id="email" placeholder="Email" required />
 
-        <input
-            type="email"
-            placeholder="Seu E-mail"
-            required
-        >
+      <input type="tel" id="phone" placeholder="Telefone" required />
 
-        <button type="submit">
-            Enviar Formulário
-        </button>
+      <button type="submit">Enviar Lead</button>
     </form>
 
+    <br />
+
+    <a
+      class="whatsapp"
+      href="https://wa.me/5531999999999"
+      target="_blank"
+      onclick="trackWhatsapp()"
+    >
+      Falar no WhatsApp
+    </a>
+
     <script>
+      async function trackWhatsapp() {
+        const eventId = crypto.randomUUID();
 
-        function trackViewContent() {
+        fbq(
+          "track",
+          "Contact",
+          {},
+          {
+            eventID: eventId,
+          },
+        );
 
-            fbq('track', 'ViewContent');
+        await fetch("http://localhost:8000/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            event_id: eventId,
+          }),
+        });
+      }
 
-            alert('Evento ViewContent enviado');
+      document
+        .getElementById("leadForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-        }
+          const eventId = crypto.randomUUID();
 
-        function trackWhatsapp() {
+          const name = document.getElementById("name").value;
 
-            fbq('track', 'Contact');
+          const email = document.getElementById("email").value;
 
-            window.open(
-                'https://wa.me/5531999999999',
-                '_blank'
-            );
+          const phone = document.getElementById("phone").value;
 
-        }
+          fbq(
+            "track",
+            "Lead",
+            {
+              content_name: "Formulario Principal",
+            },
+            {
+              eventID: eventId,
+            },
+          );
 
-        function trackCheckout() {
+          await fetch("http://localhost:8000/lead", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              phone: phone,
+              event_id: eventId,
+            }),
+          });
 
-            fbq('track', 'InitiateCheckout');
-
-            alert('Evento InitiateCheckout enviado');
-
-        }
-
-        function trackPurchase() {
-
-            fbq('track', 'Purchase', {
-                value: 1500,
-                currency: 'BRL'
-            });
-
-            alert('Evento Purchase enviado');
-
-        }
-
-        function trackRegistration() {
-
-            fbq('track', 'CompleteRegistration');
-
-            alert('Evento CompleteRegistration enviado');
-
-        }
-
-        document
-            .getElementById('leadForm')
-            .addEventListener('submit', function(e){
-
-                e.preventDefault();
-
-                fbq('track', 'Lead');
-
-                alert('Evento Lead enviado');
-
-            });
-
+          alert("Lead enviado!");
+        });
     </script>
-
-</body>
+  </body>
 </html>
